@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GrabFoodAppProject</string>
+    <string name="delivery">DELIVER TO</string>
+    <string-array name="spinner_location">
+        <item>Ha Noi</item>
+        <item>Sai Gon</item>
+        <item>Hai Phong</item>
+        <item>Bac Ninh</item>
+        <item>Hung Yen</item>
+    </string-array>
+</resources>
