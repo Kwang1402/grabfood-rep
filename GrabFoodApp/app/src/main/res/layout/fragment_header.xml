@@ -9,7 +9,7 @@
     android:paddingBottom="16dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/item_image1"
         android:layout_width="32dp"
         android:layout_height="32dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -36,8 +36,8 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/item_image1"
+        app:layout_constraintTop_toTopOf="@+id/item_image1" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -70,7 +70,7 @@
         android:layout_marginTop="8dp"
         android:autofillHints="@string/delivery"
         android:textAlignment="textStart"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/item_image1"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         tools:ignore="TouchTargetSizeCheck" />
