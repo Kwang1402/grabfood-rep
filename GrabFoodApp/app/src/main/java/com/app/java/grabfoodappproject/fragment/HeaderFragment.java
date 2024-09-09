@@ -29,7 +29,7 @@ public class HeaderFragment extends Fragment {
                 createFromResource(
                         requireContext(),
                         R.array.spinner_location,
-                        android.R.layout.simple_spinner_item
+                        R.layout.text_spinner
                 );
         // create dropdown
         locationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

@@ -7,9 +7,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.app.java.grabfoodappproject.adapter.FoodAdapter;
+import com.app.java.grabfoodappproject.model.Food;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    private FoodAdapter mFoodAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,4 +28,5 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
 }
