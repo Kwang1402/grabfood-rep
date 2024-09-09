@@ -13,26 +13,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.2" />
-<!--
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/flashDealFragment"
-        android:name="com.app.java.grabfoodappproject.fragment.FlashDealFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
--->
-<!--    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/adsFragment"
-        android:name="com.app.java.grabfoodappproject.fragment.AdsFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
--->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
