@@ -235,10 +235,11 @@
         android:id="@+id/ads_recycler1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/button10"
         tools:listitem="@layout/item_frag1" />
@@ -263,7 +264,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Grab ngon re"
+        android:text="Grab ngon rẻ"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -309,12 +310,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Bao tiet kiem"
+        android:text="Bao tiết kiệm"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
