@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define the stroke (border) of the shape with a color -->
+    <stroke
+        android:width="1dp"
+        android:color="#d3d3d3" /> <!-- Change this to your desired border color -->
+
+    <!-- Define the fill color of the shape -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Padding to ensure the text does not touch the borders -->
+    <padding
+        android:left="8dp"
+        android:right="8dp"
+        android:top="4dp"
+        android:bottom="4dp" />
+
+    <!-- Define the rounded corners, but only for the corners (not the sides) -->
+    <corners
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp" />
+</shape>

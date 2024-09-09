@@ -2,6 +2,12 @@
     <string name="app_name">GrabFoodAppProject</string>
     <string name="delivery">DELIVER TO</string>
     <string name="food_icon">Food Icon</string>
+    <string name="item_title">Item Title</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="default_review">5.0 (100) • $$$$ • Vietnamese Cuisine</string>
+    <string name="default_price">10.000đ • From 30 mins</string>
+    <string name="default_percentage_discount">20% off</string>
+    <string name="default_price_discount">26.000đ off</string>
     <string-array name="spinner_location">
         <item>Ha Noi</item>
         <item>Sai Gon</item>
