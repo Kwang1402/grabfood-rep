@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pink">#FFFFD2CC</color>
+    <color name="light_green">#FFD8FDDE</color>
+    <color name="light_orange">#FFFFE3CB</color>
+    <color name="light_blue">#FFB5E6E0</color>
+    <color name="green_grab">#FF00B14F</color>
+    <color name="end_gradient">#FF7DC847</color>
+    <color name="start_gradient">#FF118503</color>
 </resources>
