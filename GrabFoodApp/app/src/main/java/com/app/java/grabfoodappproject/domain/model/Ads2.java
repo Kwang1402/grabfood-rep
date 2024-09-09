@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject.models;
+package com.app.java.grabfoodappproject.domain.model;
 
 public class Ads2 {
     private int imageId;
