@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.app.java.grabfoodappproject.ShopAdapter;
-import com.app.java.grabfoodappproject.ShopData;
+import com.app.java.grabfoodappproject.adapter.ShopAdapter;
+import com.app.java.grabfoodappproject.domain_model.ShopData;
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.Shop;
+import com.app.java.grabfoodappproject.domain_model.Shop;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject;
+package com.app.java.grabfoodappproject.domain_model;
 
 import java.io.Serializable;
 
