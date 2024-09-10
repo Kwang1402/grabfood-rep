@@ -12,8 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.Food4Adapter;
-import com.app.java.grabfoodappproject.adapter.FoodAdapter;
-import com.app.java.grabfoodappproject.model.Food4;
+import com.app.java.grabfoodappproject.domain.model.Food4;
 
 import java.util.ArrayList;
 import java.util.List;

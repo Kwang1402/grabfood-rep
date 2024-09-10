@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject.model;
+package com.app.java.grabfoodappproject.domain.model;
 
 public class Ad1 {
     private String title;
