@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.app.java.grabfoodappproject.domain_model.Shop;
+import com.app.java.grabfoodappproject.domain.model.Shop;
 
 import java.util.ArrayList;
 

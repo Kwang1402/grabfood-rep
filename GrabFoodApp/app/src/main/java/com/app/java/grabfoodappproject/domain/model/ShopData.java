@@ -1,5 +1,5 @@
 
-package com.app.java.grabfoodappproject.domain_model;
+package com.app.java.grabfoodappproject.domain.model;
 
 import com.app.java.grabfoodappproject.R;
 

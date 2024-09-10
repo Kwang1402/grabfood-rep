@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.domain_model.Shop;
+import com.app.java.grabfoodappproject.domain.model.Shop;
 
 import java.util.ArrayList;
 

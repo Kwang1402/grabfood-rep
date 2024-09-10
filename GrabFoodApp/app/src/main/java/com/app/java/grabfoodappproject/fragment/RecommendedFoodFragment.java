@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.app.java.grabfoodappproject.adapter.ShopAdapter;
-import com.app.java.grabfoodappproject.domain_model.ShopData;
+import com.app.java.grabfoodappproject.domain.model.ShopData;
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.domain_model.Shop;
+import com.app.java.grabfoodappproject.domain.model.Shop;
 
 import java.util.ArrayList;
 
