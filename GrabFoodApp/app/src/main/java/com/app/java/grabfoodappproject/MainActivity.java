@@ -8,8 +8,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.app.java.grabfoodappproject.adapter.FoodAdapter;
 
+public class MainActivity extends AppCompatActivity {
+    private FoodAdapter mFoodAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,4 +23,5 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
 }

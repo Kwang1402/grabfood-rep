@@ -2,10 +2,16 @@
     <string name="app_name">GrabFoodAppProject</string>
     <string name="delivery">DELIVER TO</string>
     <string-array name="spinner_location">
-        <item>Ha Noi</item>
-        <item>Sai Gon</item>
-        <item>Hai Phong</item>
-        <item>Bac Ninh</item>
-        <item>Hung Yen</item>
+        <item>Số 8,Hoàng Quốc Việt,Cầu Giấy,Hà Nội</item>
+        <item>Khu đô thị Xuân Phương, Nam Từ Liêm,Hà Nội</item>
+        <item>Số 16, Đường Bưởi, Tây Hồ, Hà Nội</item>
+        <item>Ngõ 15, Nghĩa Tân,Cầu Giấy,Hà Nội</item>
+        <item>116 Hoàng Quốc Việt, Cầu Giấy, Hà Nội</item>
     </string-array>
+    <string name="noodle">Noodles</string>
+    <string name="rice">Rice</string>
+    <string name="hotpot">Hotpot</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="coffee">Coffee</string>
+    <string name="healthy_food">Healthy Food</string>
 </resources>
