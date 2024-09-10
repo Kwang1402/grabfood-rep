@@ -6,4 +6,19 @@
     </style>
 
     <style name="Theme.GrabFoodAppProject" parent="Base.Theme.GrabFoodAppProject" />
+    <style name="Button1" parent="Theme.GrabFoodAppProject">
+        <item name="colorPrimary">#FFD2CC</item>
+    </style>
+
+    <style name="Button2" parent="Theme.GrabFoodAppProject">
+        <item name="colorPrimary">#B5E6E0</item>
+    </style>
+
+    <style name="Button3" parent="Theme.GrabFoodAppProject">
+        <item name="colorPrimary">#D8FDDE</item>
+    </style>
+
+    <style name="Button4" parent="Theme.GrabFoodAppProject">
+        <item name="colorPrimary">#FFE3CB</item>
+    </style>
 </resources>

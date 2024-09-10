@@ -9,12 +9,18 @@
     <string name="default_percentage_discount">20% off</string>
     <string name="default_price_discount">26.000đ off</string>
     <string-array name="spinner_location">
-        <item>Ha Noi</item>
-        <item>Sai Gon</item>
-        <item>Hai Phong</item>
-        <item>Bac Ninh</item>
-        <item>Hung Yen</item>
+        <item>Số 8,Hoàng Quốc Việt,Cầu Giấy,Hà Nội</item>
+        <item>Khu đô thị Xuân Phương, Nam Từ Liêm,Hà Nội</item>
+        <item>Số 16, Đường Bưởi, Tây Hồ, Hà Nội</item>
+        <item>Ngõ 15, Nghĩa Tân,Cầu Giấy,Hà Nội</item>
+        <item>116 Hoàng Quốc Việt, Cầu Giấy, Hà Nội</item>
     </string-array>
+    <string name="noodle">Noodles</string>
+    <string name="rice">Rice</string>
+    <string name="hotpot">Hotpot</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="coffee">Coffee</string>
+    <string name="healthy_food">Healthy Food</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="flash_deals">Flash deals</string>
