@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject;
+package com.app.java.grabfoodappproject.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,14 +8,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.app.java.grabfoodappproject.domain.model.DishData;
+import com.app.java.grabfoodappproject.R;
+
 import java.util.ArrayList;
 
-public class MyAdapter extends BaseAdapter {
+public class DishAdapter extends BaseAdapter {
 
     protected Context context;
     private ArrayList<DishData> dish;
 
-    public MyAdapter(Context context){
+    public DishAdapter(Context context){
         this.context = context;
         this.dish = new ArrayList<>();
 

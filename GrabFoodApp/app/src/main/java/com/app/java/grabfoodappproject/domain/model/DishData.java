@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject;
+package com.app.java.grabfoodappproject.domain.model;
 
 public class DishData {
     private int mainImage;

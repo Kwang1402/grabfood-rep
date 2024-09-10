@@ -12,11 +12,11 @@ import android.widget.ListView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.app.java.grabfoodappproject.MyAdapter;
-import com.app.java.grabfoodappproject.ShopAdapter;
-import com.app.java.grabfoodappproject.ShopData;
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.Shop;
+import com.app.java.grabfoodappproject.adapter.DishAdapter;
+import com.app.java.grabfoodappproject.adapter.ShopAdapter;
+import com.app.java.grabfoodappproject.domain.model.Shop;
+import com.app.java.grabfoodappproject.domain.model.ShopData;
 
 import java.util.ArrayList;
 
@@ -91,7 +91,7 @@ public class RecommendedFoodFragment extends Fragment {
 
         //Nguyen's part
         ListView listView = view.findViewById(R.id.list_view);
-        MyAdapter adapter = new MyAdapter(getActivity());
+        DishAdapter adapter = new DishAdapter(getActivity());
         listView.setAdapter(adapter);
     }
 }

@@ -1,5 +1,7 @@
 
-package com.app.java.grabfoodappproject;
+package com.app.java.grabfoodappproject.domain.model;
+
+import com.app.java.grabfoodappproject.R;
 
 import java.util.ArrayList;
 

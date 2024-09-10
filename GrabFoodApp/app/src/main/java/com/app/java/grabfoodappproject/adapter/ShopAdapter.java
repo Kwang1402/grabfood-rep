@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject;
+package com.app.java.grabfoodappproject.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.app.java.grabfoodappproject.R;
+import com.app.java.grabfoodappproject.domain.model.Shop;
 
 import java.util.ArrayList;
 
