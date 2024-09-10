@@ -8,8 +8,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.app.java.grabfoodappproject.MyAdapter;
 import com.app.java.grabfoodappproject.ShopAdapter;
 import com.app.java.grabfoodappproject.ShopData;
 import com.app.java.grabfoodappproject.R;
@@ -69,6 +72,7 @@ public class RecommendedFoodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_recommended_food, container, false);
     }
 
@@ -84,5 +88,10 @@ public class RecommendedFoodFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         recyclerView.setAdapter(itemShopAdapter);
+
+        //Nguyen's part
+        ListView listView = view.findViewById(R.id.list_view);
+        MyAdapter adapter = new MyAdapter(getActivity());
+        listView.setAdapter(adapter);
     }
 }
