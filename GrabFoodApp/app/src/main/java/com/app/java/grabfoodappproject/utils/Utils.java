@@ -14,7 +14,7 @@ public class Utils {
         idsOfFood.put("Hotpot", R.drawable.hotpot);
         idsOfFood.put("Healthy Food", R.drawable.healthyfood);
         idsOfFood.put("Rice", R.drawable.rice);
-        idsOfFood.put("Noodles", R.drawable.noodle);
+        idsOfFood.put("Noodles", R.drawable.hu_tieu);
     }
 
     public static final Map<String, Integer> idsOfAd = new HashMap<>();
@@ -30,7 +30,7 @@ public class Utils {
 
     public static int getFoodImageId(String foodName) {
         Integer imageId = idsOfFood.get(foodName);
-        return imageId == null ? R.drawable.noodle : imageId;
+        return imageId == null ? R.drawable.hu_tieu : imageId;
     }
 
     public static int getAd1ImageId(String title) {

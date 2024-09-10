@@ -47,7 +47,7 @@ public class FlashDealFragment extends Fragment {
 
     private List<Ads2> createListAds() {
         List<Ads2> ads2List = new ArrayList<>();
-        Ads2 ad1 = new Ads2(R.drawable.noodle, "Mì Trộn Thập Cẩm");
+        Ads2 ad1 = new Ads2(R.drawable.hu_tieu, "Mì Trộn Thập Cẩm");
         Ads2 ad2 = new Ads2(R.drawable.rec_buntron, "Bún Trộn Hải Phòng");
         Ads2 ad3 = new Ads2(R.drawable.rec_banhmisale, "Bánh Mì Phố Cổ");
         Ads2 ad4 = new Ads2(R.drawable.rec_comga, "Cơm Gà Bắc Kinh");

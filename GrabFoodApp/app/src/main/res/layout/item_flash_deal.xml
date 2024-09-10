@@ -29,7 +29,7 @@
             android:layout_height="80dp"
             android:scaleType="centerCrop"
             android:layout_alignParentStart="true"
-            android:background="@drawable/noodle"
+            android:background="@drawable/hu_tieu"
             android:contentDescription="@string/food_icon" />
 
         <!-- Title -->

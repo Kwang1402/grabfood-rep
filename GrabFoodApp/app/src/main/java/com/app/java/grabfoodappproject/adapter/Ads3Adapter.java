@@ -62,7 +62,7 @@ public class Ads3Adapter extends RecyclerView.Adapter<Ads3Adapter.ViewHolder>{
             if(imageId != -1){
                 imageItem.setImageResource(imageId);
             }else{
-                imageItem.setImageResource(R.drawable.noodle);
+                imageItem.setImageResource(R.drawable.hu_tieu);
             }
 
         }
