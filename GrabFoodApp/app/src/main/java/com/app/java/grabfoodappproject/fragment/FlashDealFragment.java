@@ -10,10 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.Ads2Adapter;
+import com.app.java.grabfoodappproject.adapter.RestaurantAdapter;
 import com.app.java.grabfoodappproject.domain.model.Ads2;
+import com.app.java.grabfoodappproject.domain.model.Restaurant;
 
 import java.util.ArrayList;
 import java.util.List;
