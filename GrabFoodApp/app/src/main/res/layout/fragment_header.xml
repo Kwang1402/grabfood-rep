@@ -37,18 +37,18 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ic_favourite"
         android:layout_width="@dimen/icon_size"
         android:layout_height="@dimen/icon_size"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_order"
+        app:layout_constraintEnd_toStartOf="@+id/ic_order"
+        app:layout_constraintTop_toTopOf="@+id/ic_order"
         app:srcCompat="@drawable/heart"
         app:tint="#EAE2E2" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ic_order"
         android:layout_width="@dimen/icon_size"
         android:layout_height="@dimen/icon_size"
         android:layout_marginEnd="16dp"
@@ -68,7 +68,7 @@
         android:gravity="start"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/ic_favourite"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         tools:ignore="TouchTargetSizeCheck" />
