@@ -2,6 +2,7 @@ package com.app.java.grabfoodappproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class FoodActivity extends AppCompatActivity {
     public static final String FOOD_KEY = "FOOD_KEY";
+    public static final String FOOD_KEY_IMAGE = "FOOD_KEY_IMAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,7 @@
 package com.app.java.grabfoodappproject.domain.model;
 
 public class Food {
+    private int imageId;
     private String foodName;
 
     public Food() {
@@ -10,6 +11,9 @@ public class Food {
         this.foodName = foodName;
     }
 
+    public int getImageId() {
+        return imageId;
+    }
 
     public String getFoodName() {
         return foodName;

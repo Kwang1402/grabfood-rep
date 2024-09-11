@@ -69,6 +69,7 @@ public class IntroFragment extends Fragment {
     private void createDetailFood(Food food) {
         Intent intent = new Intent(requireActivity(), FoodActivity.class);
         intent.putExtra(FoodActivity.FOOD_KEY,food.getFoodName());
+        intent.putExtra(FoodActivity.FOOD_KEY_IMAGE,food.getImageId());
         startActivity(intent);
     }
 
