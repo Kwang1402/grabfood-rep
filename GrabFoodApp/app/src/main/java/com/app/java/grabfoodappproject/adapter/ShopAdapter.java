@@ -50,7 +50,7 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.MyViewHolder>{
 
         public MyViewHolder (View itemView) {
             super(itemView);
-            shopImage = itemView.findViewById(R.id.shopImage);
+            shopImage = itemView.findViewById(R.id.item_image_recommend);
             name = itemView.findViewById(R.id.name);
             discount = itemView.findViewById(R.id.discount);
             detail = itemView.findViewById(R.id.detail);

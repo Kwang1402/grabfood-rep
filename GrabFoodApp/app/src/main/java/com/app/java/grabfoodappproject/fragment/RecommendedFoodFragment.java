@@ -90,8 +90,8 @@ public class RecommendedFoodFragment extends Fragment {
         recyclerView.setAdapter(itemShopAdapter);
 
         //Nguyen's part
-        ListView listView = view.findViewById(R.id.list_view);
-        DishAdapter adapter = new DishAdapter(getActivity());
-        listView.setAdapter(adapter);
+//        ListView listView = view.findViewById(R.id.list_view);
+//        DishAdapter adapter = new DishAdapter(getActivity());
+//        listView.setAdapter(adapter);
     }
 }
