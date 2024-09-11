@@ -8,13 +8,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.app.java.grabfoodappproject.domain.model.Shop;
-
-import java.util.ArrayList;
+import com.app.java.grabfoodappproject.adapter.FoodAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Shop> shoplist;
-
+    private FoodAdapter mFoodAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,4 +23,5 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
 }

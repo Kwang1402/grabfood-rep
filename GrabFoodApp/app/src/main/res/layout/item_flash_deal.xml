@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:ignore="DuplicateIds"
+
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/item_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/hu_tieu"
+            android:contentDescription="@string/food_icon" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_image1"
+            android:text="@string/burger_fat_cat1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+
+        <!-- Discount -->
+        <TextView
+            android:id="@+id/discountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title"
+            android:layout_toEndOf="@id/item_image1"
+            android:text="@string/_10_000_off2"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Minimum spend -->
+        <TextView
+            android:id="@+id/minSpendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/discountText"
+            android:layout_toEndOf="@id/item_image1"
+            android:text="@string/min_50_000_spend2"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

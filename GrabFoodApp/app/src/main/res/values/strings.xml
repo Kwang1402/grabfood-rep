@@ -1,15 +1,42 @@
 <resources>
     <string name="app_name">GrabFoodAppProject</string>
     <string name="delivery">DELIVER TO</string>
+    <string name="food_icon">Food Icon</string>
+    <string name="item_title">Item Title</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="default_review">5.0 (100) • $$$$ • Vietnamese Cuisine</string>
+    <string name="default_price">10.000đ • From 30 mins</string>
+    <string name="default_percentage_discount">20% off</string>
+    <string name="default_price_discount">26.000đ off</string>
     <string-array name="spinner_location">
-        <item>Ha Noi</item>
-        <item>Sai Gon</item>
-        <item>Hai Phong</item>
-        <item>Bac Ninh</item>
-        <item>Hung Yen</item>
+        <item>Số 8,Hoàng Quốc Việt,Cầu Giấy,Hà Nội</item>
+        <item>Khu đô thị Xuân Phương, Nam Từ Liêm,Hà Nội</item>
+        <item>Số 16, Đường Bưởi, Tây Hồ, Hà Nội</item>
+        <item>Ngõ 15, Nghĩa Tân,Cầu Giấy,Hà Nội</item>
+        <item>116 Hoàng Quốc Việt, Cầu Giấy, Hà Nội</item>
     </string-array>
+    <string name="noodle">Noodles</string>
+    <string name="rice">Rice</string>
+    <string name="hotpot">Hotpot</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="coffee">Coffee</string>
+    <string name="healthy_food">Healthy Food</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flash_deals">Flash deals</string>
+    <string name="order_soon_to_get_a_limited_time_offer">Order soon to get a limited time offer!</string>
+    <string name="burger_fat_cat">Burger Fat Cat</string>
+    <string name="_10_000_off">10.000đ off</string>
+    <string name="min_50_000_spend">Min. 50.000đ spend</string>
+    <string name="min_50_000_spend1">Min. 50.000đ spend</string>
+    <string name="_10_000_off1">10.000đ off</string>
+    <string name="burger_factory_base_21">Burger Factory - Base 2</string>
+    <string name="burger_fat_cat1">Burger Fat Cat</string>
+    <string name="_10_000_off2">10.000đ off</string>
+    <string name="min_50_000_spend2">Min. 50.000đ spend</string>
+    <string name="dat_ngay">Đặt ngay</string>
+    <string name="arrow_icon">Arrow Icon</string>
+    <string name="t_ngay">Đặt ngay</string>
     <string name="b_nh_m_vi_t">Bánh mì Việt</string>
     <string name="banh_mi">banh_mi</string>
     <string name="shop_image">shop_image</string>
