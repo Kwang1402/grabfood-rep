@@ -11,67 +11,70 @@
     tools:ignore="DuplicateIds"
 
     >
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
 
-        <!-- Image -->
-        <ImageView
-            android:id="@+id/item_image1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:scaleType="centerCrop"
-            android:layout_alignParentStart="true"
-            android:background="@drawable/hu_tieu"
-            android:contentDescription="@string/food_icon" />
-
-        <!-- Title -->
-        <TextView
-            android:id="@+id/text_title"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/item_image1"
-            android:text="@string/burger_fat_cat1"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginStart="8dp" />
+            android:padding="8dp">
 
-        <!-- Discount -->
-        <TextView
-            android:id="@+id/discountText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_title"
-            android:layout_toEndOf="@id/item_image1"
-            android:text="@string/_10_000_off2"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="14sp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp" />
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/item_image1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/hu_tieu"
+                android:contentDescription="@string/food_icon"
+                android:scaleType="centerCrop" />
 
-        <!-- Minimum spend -->
-        <TextView
-            android:id="@+id/minSpendText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/discountText"
-            android:layout_toEndOf="@id/item_image1"
-            android:text="@string/min_50_000_spend2"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="12sp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp" />
+            <!-- Title -->
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/item_image1"
+                android:text="@string/burger_fat_cat1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-    </RelativeLayout>
+            <!-- Discount -->
+            <TextView
+                android:id="@+id/discountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/item_image1"
+                android:text="@string/_10_000_off2"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
-</LinearLayout>
+            <!-- Minimum spend -->
+            <TextView
+                android:id="@+id/minSpendText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discountText"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/item_image1"
+                android:text="@string/min_50_000_spend2"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

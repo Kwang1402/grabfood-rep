@@ -15,6 +15,7 @@ import android.widget.ListView;
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.Ads2Adapter;
 import com.app.java.grabfoodappproject.adapter.RestaurantAdapter;
+import com.app.java.grabfoodappproject.adapter.RestaurantAdapterRecycler;
 import com.app.java.grabfoodappproject.domain.model.Ads2;
 import com.app.java.grabfoodappproject.domain.model.Restaurant;
 
@@ -39,6 +40,17 @@ public class FlashDealFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initRecycleView(view);
+        // Find the ListView
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_flash_deal);
+        // Sample data
+        List<Restaurant> restaurants = new ArrayList<>();
+        restaurants.add(new Restaurant("Bánh Mì Cô Chun", "4.7 (479) • $$$$ • Bread", "10.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "20% off", "10.000đ off", R.drawable.banh_mi_co_chun));
+        restaurants.add(new Restaurant("Cơm Niêu Hợp Tác Xã", "4.2 (415) • $$$$ • Rice", "Free 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "100% off", "15.000đ off", R.drawable.com_nieu_hop_tac_xa));
+        restaurants.add(new Restaurant("Cà Phê Muối Chú Long", "4.2 (94) • $$$$ • Coffee - Tea - Juice", "11.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 35 mins", "20% off", "10.000đ off", R.drawable.ca_phe_muoi_chu_long));
+
+        // Set the custom adapter
+        RestaurantAdapterRecycler adapter = new RestaurantAdapterRecycler(restaurants);
+        recyclerView.setAdapter(adapter);
     }
 
     private void initRecycleView(View view) {
