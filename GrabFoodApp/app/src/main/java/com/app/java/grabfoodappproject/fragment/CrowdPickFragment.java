@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.Food4Adapter;
-import com.app.java.grabfoodappproject.adapter.RestaurantAdapter;
 import com.app.java.grabfoodappproject.adapter.RestaurantAdapterRecycler;
 import com.app.java.grabfoodappproject.domain.model.Food4;
 import com.app.java.grabfoodappproject.domain.model.Restaurant;
@@ -21,11 +19,11 @@ import com.app.java.grabfoodappproject.domain.model.Restaurant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fragment4 extends Fragment {
+public class CrowdPickFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment4,container,false);
+        return inflater.inflate(R.layout.fragment_crowd_pick,container,false);
     }
 
     @Override

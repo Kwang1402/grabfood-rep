@@ -21,11 +21,11 @@ import com.app.java.grabfoodappproject.domain.model.Food;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fragment1 extends Fragment {
+public class IntroFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment1,container,false);
+        return inflater.inflate(R.layout.fragment_intro,container,false);
     }
 
     @Override
@@ -68,6 +68,7 @@ public class Fragment1 extends Fragment {
 
     private void createDetailFood(Food food) {
         Intent intent = new Intent(requireActivity(), FoodActivity.class);
+        intent.putExtra(FoodActivity.FOOD_KEY,food.getFoodName());
         startActivity(intent);
     }
 

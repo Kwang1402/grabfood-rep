@@ -23,7 +23,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView3"
-                android:name="com.app.java.grabfoodappproject.fragment.Fragment1"
+                android:name="com.app.java.grabfoodappproject.fragment.IntroFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -57,7 +57,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView11"
-                android:name="com.app.java.grabfoodappproject.fragment.Fragment4"
+                android:name="com.app.java.grabfoodappproject.fragment.CrowdPickFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
