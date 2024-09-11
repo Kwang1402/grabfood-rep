@@ -23,9 +23,10 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView3"
-                android:name="com.app.java.grabfoodappproject.fragment.Fragment1"
+                android:name="com.app.java.grabfoodappproject.fragment.IntroFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -35,23 +36,31 @@
             android:orientation="vertical">
 
             <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView4"
-                android:name="com.app.java.grabfoodappproject.fragment.Fragment4"
+                android:id="@+id/fragmentContainerView12"
+                android:name="com.app.java.grabfoodappproject.fragment.FlashDealFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"/>
+            android:orientation="vertical" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"/>
+            android:orientation="vertical">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView11"
+                android:name="com.app.java.grabfoodappproject.fragment.CrowdPickFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

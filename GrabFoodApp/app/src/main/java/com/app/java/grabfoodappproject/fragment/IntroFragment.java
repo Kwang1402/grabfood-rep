@@ -1,5 +1,6 @@
 package com.app.java.grabfoodappproject.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.app.java.grabfoodappproject.FoodActivity;
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.FoodAdapter;
 import com.app.java.grabfoodappproject.adapter.Frag1Adapter;
@@ -19,11 +21,11 @@ import com.app.java.grabfoodappproject.domain.model.Food;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fragment1 extends Fragment {
+public class IntroFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment1,container,false);
+        return inflater.inflate(R.layout.fragment_intro,container,false);
     }
 
     @Override
@@ -60,8 +62,14 @@ public class Fragment1 extends Fragment {
     private void initFoodRecyclerView(View view) {
         RecyclerView recyclerView = view.findViewById(R.id.food_recycler);
         List<Food> foodList = createFoodList();
-        FoodAdapter adapter = new FoodAdapter(foodList);
+        FoodAdapter adapter = new FoodAdapter(foodList, this::createDetailFood);
         recyclerView.setAdapter(adapter);
+    }
+
+    private void createDetailFood(Food food) {
+        Intent intent = new Intent(requireActivity(), FoodActivity.class);
+        intent.putExtra(FoodActivity.FOOD_KEY,food.getFoodName());
+        startActivity(intent);
     }
 
     private List<Food> createFoodList() {

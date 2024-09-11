@@ -18,8 +18,10 @@ import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
     private final List<Food> mFoodLists;
+    private final onItemClickListener mListener;
 
-    public FoodAdapter(List<Food> foodLists) {
+    public FoodAdapter(List<Food> foodLists, onItemClickListener listener) {
+        mListener = listener;
         if(foodLists == null){
             mFoodLists = new ArrayList<>();
         }else{
@@ -38,7 +40,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.bind(mFoodLists.get(position));
+        holder.bind(mFoodLists.get(position),mListener);
     }
 
     @Override
@@ -55,9 +57,14 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
             imageItem = itemView.findViewById(R.id.item_food_image);
             textItem = itemView.findViewById(R.id.item_food_text);
         }
-        public void bind(Food food){
+        public void bind(Food food, onItemClickListener listener){
             textItem.setText(food.getFoodName());
             imageItem.setImageResource(Utils.getFoodImageId(food.getFoodName()));
+            itemView.setOnClickListener(v -> listener.onItemClick(food));
         }
+    }
+
+    public interface onItemClickListener{
+        void onItemClick(Food food);
     }
 }

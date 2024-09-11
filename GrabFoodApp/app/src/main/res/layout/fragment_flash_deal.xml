@@ -14,8 +14,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:text="@string/flash_deals"
-        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,8 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:background="#F3EFEF"
+        android:padding="4dp"
         android:text="12:30"
-        android:background="#a9a9a9"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
@@ -63,5 +65,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:listitem="@layout/item_flash_deal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_flash_deal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ads2_recycleview"
+        tools:listitem="@layout/item_restaurant" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
