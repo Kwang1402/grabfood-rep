@@ -37,4 +37,17 @@
     <string name="dat_ngay">Đặt ngay</string>
     <string name="arrow_icon">Arrow Icon</string>
     <string name="t_ngay">Đặt ngay</string>
+    <string name="b_nh_m_vi_t">Bánh mì Việt</string>
+    <string name="banh_mi">banh_mi</string>
+    <string name="shop_image">shop_image</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="meal_under_40k">Meal under 40K</string>
+    <string name="save_every_day">Save every day</string>
+    <string name="qu_n_ngon_b">Quán ngon ĐB</string>
+    <string name="ngon_ph_i_th">Ngon phải thử</string>
+    <string name="si_u_ti_c_99k">Siêu tiệc 99K</string>
+    <string name="deal_to_ti_c_to">Deal to tiệc to</string>
+    <string name="back_to_school">Back to school</string>
+    <string name="khao_ti_c_t_u_tr">Khao tiệc tựu trư..</string>
+    <string name="arrow_button">arrow_button</string>
 </resources>
