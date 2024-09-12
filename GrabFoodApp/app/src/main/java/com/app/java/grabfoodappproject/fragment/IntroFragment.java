@@ -11,12 +11,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.app.java.grabfoodappproject.FoodActivity;
+import com.app.java.grabfoodappproject.activity.AdDetailActivity;
+import com.app.java.grabfoodappproject.activity.FoodActivity;
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.FoodAdapter;
-import com.app.java.grabfoodappproject.adapter.Frag1Adapter;
+import com.app.java.grabfoodappproject.adapter.AdIntroAdapter;
 import com.app.java.grabfoodappproject.domain.model.Ad1;
 import com.app.java.grabfoodappproject.domain.model.Food;
+import com.app.java.grabfoodappproject.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +40,14 @@ public class IntroFragment extends Fragment {
     private void initAdRecyclerView(View view) {
         RecyclerView adRecycler = view.findViewById(R.id.ads_recycler1);
         List<Ad1> ad1List = createAd1List();
-        Frag1Adapter adAdapter = new Frag1Adapter(ad1List);
+        AdIntroAdapter adAdapter = new AdIntroAdapter(ad1List,this::createDetailAd);
         adRecycler.setAdapter(adAdapter);
+    }
+
+    private void createDetailAd(Ad1 ad1) {
+        Intent intent = new Intent(requireActivity(),AdDetailActivity.class);
+        intent.putExtra(AdDetailActivity.IMAGE_ID_KEY, Utils.getAd1ImageId(ad1.getAdName()));
+        startActivity(intent);
     }
 
     private List<Ad1> createAd1List() {

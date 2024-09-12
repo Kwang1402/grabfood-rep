@@ -21,4 +21,8 @@
     <style name="Button4" parent="Theme.GrabFoodAppProject">
         <item name="colorPrimary">#FFE3CB</item>
     </style>
+
+    <style name="button_detail" parent="Theme.GrabFoodAppProject">
+        <item name="colorPrimary">#FF7043</item>
+    </style>
 </resources>
