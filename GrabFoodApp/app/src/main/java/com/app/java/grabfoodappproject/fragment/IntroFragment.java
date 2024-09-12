@@ -75,12 +75,12 @@ public class IntroFragment extends Fragment {
 
     private List<Food> createFoodList() {
         List<Food> foodList = new ArrayList<>();
-        Food noodles = new Food(getString(R.string.noodle));
-        Food rice = new Food(getString(R.string.rice));
-        Food hotpot = new Food(getString(R.string.hotpot));
-        Food healthyFood = new Food(getString(R.string.healthy_food));
-        Food fastFood = new Food(getString(R.string.fast_food));
-        Food coffee = new Food(getString(R.string.coffee));
+        Food noodles = new Food(getString(R.string.noodle), R.drawable.noodle);
+        Food rice = new Food(getString(R.string.rice), R.drawable.fa_com_gaolut);
+        Food hotpot = new Food(getString(R.string.hotpot), R.drawable.fa_lau_thai);
+        Food healthyFood = new Food(getString(R.string.healthy_food), R.drawable.fa_healthyfood);
+        Food fastFood = new Food(getString(R.string.fast_food), R.drawable.fa_lau_ech);
+        Food coffee = new Food(getString(R.string.coffee), R.drawable.ca_phe_muoi_chu_long);
         foodList.add(noodles);
         foodList.add(rice);
         foodList.add(healthyFood);
