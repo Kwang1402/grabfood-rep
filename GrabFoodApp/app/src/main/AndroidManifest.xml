@@ -19,10 +19,7 @@
             android:name=".activity.FoodActivity"
             android:exported="false" />
         <activity
-            android:name=".RestaurantActivity"
-            android:exported="false" />
-        <activity
-            android:name=".utils.Restaurant"
+            android:name=".activity.RestaurantActivity"
             android:exported="false" />
         <activity
             android:name=".activity.MainActivity"
