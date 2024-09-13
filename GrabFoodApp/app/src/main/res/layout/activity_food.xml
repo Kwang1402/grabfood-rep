@@ -3,9 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".activity.FoodActivity">
+
+    <ImageButton
+        android:id="@+id/icon_back_button"
+        android:layout_width="30dp"
+        android:background="@color/white"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/back_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/fa_back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -15,7 +29,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ca_phe_muoi_chu_long" />
+        app:srcCompat="@drawable/ca_phe_muoi_chu_long"
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/text_food_detail"

@@ -7,8 +7,9 @@ public class Food {
     public Food() {
     }
 
-    public Food( String foodName) {
+    public Food( String foodName, int imageId) {
         this.foodName = foodName;
+        this.imageId = imageId;
     }
 
     public int getImageId() {

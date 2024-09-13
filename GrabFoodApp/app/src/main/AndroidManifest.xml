@@ -19,6 +19,12 @@
             android:name=".activity.FoodActivity"
             android:exported="false" />
         <activity
+            android:name=".RestaurantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".utils.Restaurant"
+            android:exported="false" />
+        <activity
             android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
