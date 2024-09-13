@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject;
+package com.app.java.grabfoodappproject.activity;
 
 import android.os.Bundle;
 
@@ -8,6 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.FoodAdapter;
 
 public class MainActivity extends AppCompatActivity {
