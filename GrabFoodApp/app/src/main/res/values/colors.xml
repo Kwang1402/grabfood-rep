@@ -15,4 +15,6 @@
     <color name="green_grab">#FF00B14F</color>
     <color name="end_gradient">#FF7DC847</color>
     <color name="start_gradient">#FF118503</color>
+    <color name="very_light_blue">#E4F6F8</color>
+    <color name="dark_blue">#00268D</color>
 </resources>

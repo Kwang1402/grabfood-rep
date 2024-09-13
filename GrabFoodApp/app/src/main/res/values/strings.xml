@@ -52,4 +52,16 @@
     <string name="arrow_button">arrow_button</string>
     <string name="back_icon">Back Icon</string>
     <string name="text_btn_detail">Get GrabUnlimited now to enjoy free\n delivery everyday! </string>
+    <string name="food_orders">Food Orders</string>
+    <string name="dine_out_voucher">Dine Out Voucher</string>
+    <string name="view_dine_out_vouchers">View Dine Out Vouchers</string>
+    <string name="dine_out_vouchers">Dine Out Vouchers</string>
+    <string name="its_empty_now">It\'s empty now</string>
+    <string name="purchase_a_dine_out_voucher_and_find_it_here">Purchase a Dine Out Voucher and find it here!</string>
+    <string name="favourite_restaurants">Favourite Restaurants</string>
+    <string name="all_your_favourite_restaurants_in_one_place">All your favourite restaurants, in one place</string>
+    <string name="we_re_making_it_easier_to_order_food_from_places_you_swear_by_simply_tap_the_heart_icon_on_the_restaurant_page_to_fill_this_space">We\'re making it easier to order food from places you swear by. Simply tap the heart icon on the restaurant page to fill this space!</string>
+    <string name="coupon_image">coupon_image</string>
+    <string name="left_arrow_ic">left_arrow_ic</string>
+    <string name="favourite_image">favourite_image</string>
 </resources>
