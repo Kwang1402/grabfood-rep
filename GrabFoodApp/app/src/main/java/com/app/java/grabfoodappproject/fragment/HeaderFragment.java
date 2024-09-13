@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.app.java.grabfoodappproject.FoodActivity;
 import com.app.java.grabfoodappproject.R;
+import com.app.java.grabfoodappproject.RestaurantActivity;
 
 public class HeaderFragment extends Fragment {
     @Nullable
@@ -40,11 +40,11 @@ public class HeaderFragment extends Fragment {
         spinnerLocation.setAdapter(locationAdapter);
 
         ImageView imageFavourite = view.findViewById(R.id.ic_favourite);
-        ImageView imageOrder = view.findViewById(R.id.ic_order);
+       // ImageView imageOrder = view.findViewById(R.id.ic_order);
 
-//        imageFavourite.setOnClickListener(v -> {
-//            Intent intent = new Intent(requireContext(), FoodActivity.class);
-//            startActivity(intent);
-//        });
+        imageFavourite.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), RestaurantActivity.class);
+            startActivity(intent);
+        });
     }
 }
