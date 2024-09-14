@@ -8,6 +8,7 @@
     <string name="default_price">10.000đ • From 30 mins</string>
     <string name="default_percentage_discount">20% off</string>
     <string name="default_price_discount">26.000đ off</string>
+    <string name = "back_button">back</string>
     <string-array name="spinner_location">
         <item>Số 8,Hoàng Quốc Việt,Cầu Giấy,Hà Nội</item>
         <item>Khu đô thị Xuân Phương, Nam Từ Liêm,Hà Nội</item>
@@ -64,4 +65,5 @@
     <string name="coupon_image">coupon_image</string>
     <string name="left_arrow_ic">left_arrow_ic</string>
     <string name="favourite_image">favourite_image</string>
+    <string name="Back">Back\n</string>
 </resources>
