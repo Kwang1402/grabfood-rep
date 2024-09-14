@@ -15,10 +15,10 @@ import com.app.java.grabfoodappproject.domain.model.Food4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Food4Adapter extends RecyclerView.Adapter<Food4Adapter.ViewHolder>{
+public class CrowdPickAdapter extends RecyclerView.Adapter<CrowdPickAdapter.ViewHolder>{
     private final List<Food4> mFood4List;
 
-    public Food4Adapter(List<Food4> food4List) {
+    public CrowdPickAdapter(List<Food4> food4List) {
         if(food4List == null){
             mFood4List = new ArrayList<>();
         }else{

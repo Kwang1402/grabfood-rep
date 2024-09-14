@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.adapter.Food4Adapter;
+import com.app.java.grabfoodappproject.adapter.CrowdPickAdapter;
 import com.app.java.grabfoodappproject.adapter.RestaurantAdapterRecycler;
 import com.app.java.grabfoodappproject.domain.model.Food4;
 import com.app.java.grabfoodappproject.domain.model.Restaurant;
@@ -31,7 +31,7 @@ public class CrowdPickFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerFood = view.findViewById(R.id.recycler_horizontal4);
         List<Food4> food4List = createFood4List();
-        Food4Adapter food4Adapter = new Food4Adapter(food4List);
+        CrowdPickAdapter food4Adapter = new CrowdPickAdapter(food4List);
         recyclerFood.setAdapter(food4Adapter);
 
         // Find the ListView

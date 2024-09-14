@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.adapter.Ads3Adapter;
+import com.app.java.grabfoodappproject.adapter.AdsAdapter;
 import com.app.java.grabfoodappproject.domain.model.Ads3;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class AdsFragment extends Fragment {
     private void initRecycleView(View view) {
         RecyclerView recyclerView = view.findViewById(R.id.ads3_recycleview);
         List<Ads3> ads3List = createListAds();
-        Ads3Adapter adapter = new Ads3Adapter(ads3List);
+        AdsAdapter adapter = new AdsAdapter(ads3List);
         recyclerView.setAdapter(adapter);
     }
 

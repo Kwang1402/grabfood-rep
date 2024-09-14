@@ -10,15 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.domain.model.Ads3;
+import com.app.java.grabfoodappproject.domain.model.Ads2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ads3Adapter extends RecyclerView.Adapter<Ads3Adapter.ViewHolder>{
-    private final List<Ads3> listAds;
+public class FlashDealAdapter extends RecyclerView.Adapter<FlashDealAdapter.ViewHolder>{
+    private final List<Ads2> listAds;
 
-    public Ads3Adapter(List<Ads3> listAds) {
+    public FlashDealAdapter(List<Ads2> listAds) {
         if (listAds == null)    {
             this.listAds = new ArrayList<>();
         }   else {
@@ -30,7 +30,7 @@ public class Ads3Adapter extends RecyclerView.Adapter<Ads3Adapter.ViewHolder>{
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).
-                inflate(R.layout.item_ads, parent, false);
+                inflate(R.layout.item_flash_deal, parent, false);
         return new ViewHolder(itemView);
     }
 
@@ -46,19 +46,16 @@ public class Ads3Adapter extends RecyclerView.Adapter<Ads3Adapter.ViewHolder>{
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         private final ImageView imageItem;
-        private final TextView adsTitle;
-        private final TextView adsDes;
+        private final TextView textTilte;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageItem = itemView.findViewById(R.id.ad_image);
-            adsTitle = itemView.findViewById(R.id.ads_title);
-            adsDes = itemView.findViewById(R.id.ads_des);
+            imageItem = itemView.findViewById(R.id.item_image1);
+            textTilte = itemView.findViewById(R.id.text_title);
         }
-        public void bind(Ads3 ads3)  {
-            adsTitle.setText(ads3.getAdsTitle());
-            adsDes.setText(ads3.getAdsDes());
-            int imageId = ads3.getImageId();
+        public void bind(Ads2 ads2)  {
+            textTilte.setText(ads2.getTextTitle());
+            int imageId = ads2.getImageId();
             if(imageId != -1){
                 imageItem.setImageResource(imageId);
             }else{

@@ -10,11 +10,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.adapter.Ads2Adapter;
-import com.app.java.grabfoodappproject.adapter.RestaurantAdapter;
+import com.app.java.grabfoodappproject.adapter.FlashDealAdapter;
 import com.app.java.grabfoodappproject.adapter.RestaurantAdapterRecycler;
 import com.app.java.grabfoodappproject.domain.model.Ads2;
 import com.app.java.grabfoodappproject.domain.model.Restaurant;
@@ -56,7 +54,7 @@ public class FlashDealFragment extends Fragment {
     private void initRecycleView(View view) {
         RecyclerView recyclerView = view.findViewById(R.id.ads2_recycleview);
         List<Ads2> ads2List = createListAds();
-        Ads2Adapter adapter = new Ads2Adapter(ads2List);
+        FlashDealAdapter adapter = new FlashDealAdapter(ads2List);
         recyclerView.setAdapter(adapter);
     }
 
