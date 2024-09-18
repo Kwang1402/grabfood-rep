@@ -1,5 +1,6 @@
 package com.app.java.grabfoodappproject.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,17 +13,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.adapter.AdsAdapter;
-import com.app.java.grabfoodappproject.domain.model.Ads3;
+import com.app.java.grabfoodappproject.activity.AdDetailActivity;
+import com.app.java.grabfoodappproject.adapter.AdIntroAdapter;
+import com.app.java.grabfoodappproject.domain.model.IntroAds;
+import com.app.java.grabfoodappproject.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class AdsFragment extends Fragment {
-
-    public AdsFragment() {
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,32 +29,35 @@ public class AdsFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_ads, container, false);
     }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initRecycleView(view);
+        initAds(view);
     }
 
-    private void initRecycleView(View view) {
-        RecyclerView recyclerView = view.findViewById(R.id.ads3_recycleview);
-        List<Ads3> ads3List = createListAds();
-        AdsAdapter adapter = new AdsAdapter(ads3List);
-        recyclerView.setAdapter(adapter);
+    private void initAds(View view) {
+        RecyclerView adRecycler = view.findViewById(R.id.ads_recycler);
+        List<IntroAds> adsList = new ArrayList<>();
+        IntroAds introAds = new IntroAds("Đăng ký ngay","lotte","Combo siêu hời chỉ 499K,tiết kiệm đến 180K");
+        IntroAds ad2 = new IntroAds("Đặt ngay","pizzahut","Combo tựu trường giá chỉ từ 319K");
+        IntroAds ad3 = new IntroAds("Đặt đơn ngay","banh_mi","Mua 2 tặng 1 Burger Gà Giòn");
+        IntroAds ad4 = new IntroAds("Đặt ngay","highland","Giòn giã chuyện trăng");
+        IntroAds ad5 = new IntroAds("Đặt đơn ngay","highland2","Khuyến mãi nạp thẻ xịn sò");
+        IntroAds ad6 = new IntroAds("Đặt ngay","highland3","Quế ấm phin êm, phong vị độc đáo");
+        adsList.add(introAds);
+        adsList.add(ad2);
+        adsList.add(ad3);
+        adsList.add(ad4);
+        adsList.add(ad5);
+        adsList.add(ad6);
+        AdIntroAdapter adsAdapter = new AdIntroAdapter(adsList, this::createDetailAd);
+        adRecycler.setAdapter(adsAdapter);
     }
 
-    private List<Ads3> createListAds() {
-        List<Ads3> ads3List = new ArrayList<>();
-        Ads3 ad1 = new Ads3(R.drawable.highland, "Highland, High mọi lúc mọi nơi", "Highland");
-        Ads3 ad2 = new Ads3(R.drawable.highland2, "Highland, High mọi lúc mọi nơi", "Highland");
-        Ads3 ad3 = new Ads3(R.drawable.highland3, "Highland, High mọi lúc mọi nơi", "Highland");
-        Ads3 ad4 = new Ads3(R.drawable.lotte, "Tiệc Lotte Tưng Bừng", "Lottery");
-        Ads3 ad5 = new Ads3(R.drawable.pizzahut, "Combo Tựu Trường", "Grab Tựu Trường");
-        ads3List.add(ad1);
-        ads3List.add(ad2);
-        ads3List.add(ad3);
-        ads3List.add(ad4);
-        ads3List.add(ad5);
-        return ads3List;
+    private void createDetailAd(IntroAds introAds) {
+        Intent intent = new Intent(requireActivity(), AdDetailActivity.class);
+        intent.putExtra(AdDetailActivity.IMAGE_ID_KEY, Utils.getIntroAdImageId(introAds.getAdName()));
+        startActivity(intent);
     }
-
 }

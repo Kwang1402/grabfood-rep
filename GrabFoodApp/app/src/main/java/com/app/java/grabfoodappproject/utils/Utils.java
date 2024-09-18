@@ -33,7 +33,7 @@ public class Utils {
         return imageId == null ? R.drawable.hu_tieu : imageId;
     }
 
-    public static int getAd1ImageId(String title) {
+    public static int getIntroAdImageId(String title) {
         Integer id = idsOfAd.get(title);
         return id == null ? R.drawable.lotte : id;
     }

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.FlashDealAdapter;
 import com.app.java.grabfoodappproject.adapter.RestaurantAdapterRecycler;
-import com.app.java.grabfoodappproject.domain.model.Ads2;
+import com.app.java.grabfoodappproject.domain.model.FlashDealAds;
 import com.app.java.grabfoodappproject.domain.model.Restaurant;
 
 import java.util.ArrayList;
@@ -53,25 +53,25 @@ public class FlashDealFragment extends Fragment {
 
     private void initRecycleView(View view) {
         RecyclerView recyclerView = view.findViewById(R.id.ads2_recycleview);
-        List<Ads2> ads2List = createListAds();
-        FlashDealAdapter adapter = new FlashDealAdapter(ads2List);
+        List<FlashDealAds> flashDealAdsList = createListAds();
+        FlashDealAdapter adapter = new FlashDealAdapter(flashDealAdsList);
         recyclerView.setAdapter(adapter);
     }
 
-    private List<Ads2> createListAds() {
-        List<Ads2> ads2List = new ArrayList<>();
-        Ads2 ad1 = new Ads2(R.drawable.hu_tieu, "Mì Trộn Thập Cẩm");
-        Ads2 ad2 = new Ads2(R.drawable.rec_buntron, "Bún Trộn Hải Phòng");
-        Ads2 ad3 = new Ads2(R.drawable.rec_banhmisale, "Bánh Mì Phố Cổ");
-        Ads2 ad4 = new Ads2(R.drawable.rec_comga, "Cơm Gà Bắc Kinh");
-        Ads2 ad5 = new Ads2(R.drawable.rec_caphe, "Cà Phê Chồn Đen");
-        Ads2 ad6 = new Ads2(R.drawable.rec_chao, "Cháo Dinh Dưỡng");
-        ads2List.add(ad1);
-        ads2List.add(ad2);
-        ads2List.add(ad3);
-        ads2List.add(ad4);
-        ads2List.add(ad5);
-        ads2List.add(ad6);
-        return ads2List;
+    private List<FlashDealAds> createListAds() {
+        List<FlashDealAds> flashDealAdsList = new ArrayList<>();
+        FlashDealAds ad1 = new FlashDealAds(R.drawable.hu_tieu, "Mì Trộn Thập Cẩm");
+        FlashDealAds ad2 = new FlashDealAds(R.drawable.rec_buntron, "Bún Trộn Hải Phòng");
+        FlashDealAds ad3 = new FlashDealAds(R.drawable.rec_banhmisale, "Bánh Mì Phố Cổ");
+        FlashDealAds ad4 = new FlashDealAds(R.drawable.rec_comga, "Cơm Gà Bắc Kinh");
+        FlashDealAds ad5 = new FlashDealAds(R.drawable.rec_caphe, "Cà Phê Chồn Đen");
+        FlashDealAds ad6 = new FlashDealAds(R.drawable.rec_chao, "Cháo Dinh Dưỡng");
+        flashDealAdsList.add(ad1);
+        flashDealAdsList.add(ad2);
+        flashDealAdsList.add(ad3);
+        flashDealAdsList.add(ad4);
+        flashDealAdsList.add(ad5);
+        flashDealAdsList.add(ad6);
+        return flashDealAdsList;
     }
 }

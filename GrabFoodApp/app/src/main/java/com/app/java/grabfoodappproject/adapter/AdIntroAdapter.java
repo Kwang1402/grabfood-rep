@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.domain.model.Ad1;
+import com.app.java.grabfoodappproject.domain.model.IntroAds;
 import com.app.java.grabfoodappproject.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AdIntroAdapter extends RecyclerView.Adapter<AdIntroAdapter.ViewHolder> {
-    private final List<Ad1> mAd1List;
+    private final List<IntroAds> mIntroAdsList;
     private final onItemClickListener mListener;
 
-    public AdIntroAdapter(List<Ad1> ad1List, onItemClickListener listener) {
+    public AdIntroAdapter(List<IntroAds> introAdsList, onItemClickListener listener) {
         mListener = listener;
-        if (ad1List == null) {
-            mAd1List = new ArrayList<>();
+        if (introAdsList == null) {
+            mIntroAdsList = new ArrayList<>();
         } else {
-            mAd1List = ad1List;
+            mIntroAdsList = introAdsList;
         }
     }
 
@@ -39,12 +39,12 @@ public class AdIntroAdapter extends RecyclerView.Adapter<AdIntroAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.bind(mAd1List.get(position), mListener);
+        holder.bind(mIntroAdsList.get(position), mListener);
     }
 
     @Override
     public int getItemCount() {
-        return mAd1List.size();
+        return mIntroAdsList.size();
     }
 
 
@@ -60,15 +60,15 @@ public class AdIntroAdapter extends RecyclerView.Adapter<AdIntroAdapter.ViewHold
             itemAdTitle = itemView.findViewById(R.id.item_ad_title);
         }
 
-        public void bind(Ad1 ad1, onItemClickListener listener) {
-            itemAdText.setText(ad1.getTitle());
-            itemAdTitle.setText(ad1.getAdTitle());
-            itemAdImage.setImageResource(Utils.getAd1ImageId(ad1.getAdName()));
-            itemView.setOnClickListener(v -> listener.onItemClick(ad1));
+        public void bind(IntroAds introAds, onItemClickListener listener) {
+            itemAdText.setText(introAds.getTitle());
+            itemAdTitle.setText(introAds.getAdTitle());
+            itemAdImage.setImageResource(Utils.getIntroAdImageId(introAds.getAdName()));
+            itemView.setOnClickListener(v -> listener.onItemClick(introAds));
         }
     }
 
     public interface onItemClickListener {
-        void onItemClick(Ad1 ad1);
+        void onItemClick(IntroAds introAds);
     }
 }

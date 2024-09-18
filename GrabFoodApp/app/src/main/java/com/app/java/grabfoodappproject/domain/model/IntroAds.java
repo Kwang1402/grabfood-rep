@@ -1,11 +1,11 @@
 package com.app.java.grabfoodappproject.domain.model;
 
-public class Ad1 {
+public class IntroAds {
     private String title;
     private String adName;
     private String adTitle;
 
-    public Ad1(String title, String adName,String adTitle) {
+    public IntroAds(String title, String adName, String adTitle) {
         this.title = title;
         this.adName = adName;
         this.adTitle = adTitle;

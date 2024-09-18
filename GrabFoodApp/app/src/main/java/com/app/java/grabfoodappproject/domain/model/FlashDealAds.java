@@ -1,10 +1,10 @@
 package com.app.java.grabfoodappproject.domain.model;
 
-public class Ads2 {
+public class FlashDealAds {
     private int imageId;
     private String textTitle;
 
-    public Ads2(int imageId, String textTitle)  {
+    public FlashDealAds(int imageId, String textTitle)  {
         this.imageId = imageId;
         this.textTitle = textTitle;
     }

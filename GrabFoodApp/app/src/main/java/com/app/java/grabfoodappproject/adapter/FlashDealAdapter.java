@@ -10,15 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.domain.model.Ads2;
+import com.app.java.grabfoodappproject.domain.model.FlashDealAds;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FlashDealAdapter extends RecyclerView.Adapter<FlashDealAdapter.ViewHolder>{
-    private final List<Ads2> listAds;
+    private final List<FlashDealAds> listAds;
 
-    public FlashDealAdapter(List<Ads2> listAds) {
+    public FlashDealAdapter(List<FlashDealAds> listAds) {
         if (listAds == null)    {
             this.listAds = new ArrayList<>();
         }   else {
@@ -53,9 +53,9 @@ public class FlashDealAdapter extends RecyclerView.Adapter<FlashDealAdapter.View
             imageItem = itemView.findViewById(R.id.item_image1);
             textTilte = itemView.findViewById(R.id.text_title);
         }
-        public void bind(Ads2 ads2)  {
-            textTilte.setText(ads2.getTextTitle());
-            int imageId = ads2.getImageId();
+        public void bind(FlashDealAds flashDealAds)  {
+            textTilte.setText(flashDealAds.getTextTitle());
+            int imageId = flashDealAds.getImageId();
             if(imageId != -1){
                 imageItem.setImageResource(imageId);
             }else{

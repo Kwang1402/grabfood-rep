@@ -16,7 +16,7 @@ import com.app.java.grabfoodappproject.activity.FoodActivity;
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.adapter.FoodAdapter;
 import com.app.java.grabfoodappproject.adapter.AdIntroAdapter;
-import com.app.java.grabfoodappproject.domain.model.Ad1;
+import com.app.java.grabfoodappproject.domain.model.IntroAds;
 import com.app.java.grabfoodappproject.domain.model.Food;
 import com.app.java.grabfoodappproject.utils.Utils;
 
@@ -39,32 +39,32 @@ public class IntroFragment extends Fragment {
 
     private void initAdRecyclerView(View view) {
         RecyclerView adRecycler = view.findViewById(R.id.ads_recycler1);
-        List<Ad1> ad1List = createAd1List();
-        AdIntroAdapter adAdapter = new AdIntroAdapter(ad1List,this::createDetailAd);
+        List<IntroAds> introAdsList = createAd1List();
+        AdIntroAdapter adAdapter = new AdIntroAdapter(introAdsList,this::createDetailAd);
         adRecycler.setAdapter(adAdapter);
     }
 
-    private void createDetailAd(Ad1 ad1) {
+    private void createDetailAd(IntroAds introAds) {
         Intent intent = new Intent(requireActivity(),AdDetailActivity.class);
-        intent.putExtra(AdDetailActivity.IMAGE_ID_KEY, Utils.getAd1ImageId(ad1.getAdName()));
+        intent.putExtra(AdDetailActivity.IMAGE_ID_KEY, Utils.getIntroAdImageId(introAds.getAdName()));
         startActivity(intent);
     }
 
-    private List<Ad1> createAd1List() {
-        List<Ad1> ad1List = new ArrayList<>();
-        Ad1 ad1 = new Ad1("Đăng ký ngay","lotte","Combo siêu hời chỉ 499K,tiết kiệm đến 180K");
-        Ad1 ad2 = new Ad1("Đặt ngay","pizzahut","Combo tựu trường giá chỉ từ 319K");
-        Ad1 ad3 = new Ad1("Đặt đơn ngay","banh_mi","Mua 2 tặng 1 Burger Gà Giòn");
-        Ad1 ad4 = new Ad1("Đặt ngay","highland","Giòn giã chuyện trăng");
-        Ad1 ad5 = new Ad1("Đặt đơn ngay","highland2","Khuyến mãi nạp thẻ xịn sò");
-        Ad1 ad6 = new Ad1("Đặt ngay","highland3","Quế ấm phin êm, phong vị độc đáo");
-        ad1List.add(ad1);
-        ad1List.add(ad2);
-        ad1List.add(ad3);
-        ad1List.add(ad4);
-        ad1List.add(ad5);
-        ad1List.add(ad6);
-        return ad1List;
+    private List<IntroAds> createAd1List() {
+        List<IntroAds> introAdsList = new ArrayList<>();
+        IntroAds introAds = new IntroAds("Đăng ký ngay","lotte","Combo siêu hời chỉ 499K,tiết kiệm đến 180K");
+        IntroAds ad2 = new IntroAds("Đặt ngay","pizzahut","Combo tựu trường giá chỉ từ 319K");
+        IntroAds ad3 = new IntroAds("Đặt đơn ngay","banh_mi","Mua 2 tặng 1 Burger Gà Giòn");
+        IntroAds ad4 = new IntroAds("Đặt ngay","highland","Giòn giã chuyện trăng");
+        IntroAds ad5 = new IntroAds("Đặt đơn ngay","highland2","Khuyến mãi nạp thẻ xịn sò");
+        IntroAds ad6 = new IntroAds("Đặt ngay","highland3","Quế ấm phin êm, phong vị độc đáo");
+        introAdsList.add(introAds);
+        introAdsList.add(ad2);
+        introAdsList.add(ad3);
+        introAdsList.add(ad4);
+        introAdsList.add(ad5);
+        introAdsList.add(ad6);
+        return introAdsList;
     }
 
     private void initFoodRecyclerView(View view) {
