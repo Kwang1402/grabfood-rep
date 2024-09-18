@@ -24,3 +24,5 @@ Students Info
 Material UI 
 =======================
 [GrabFood Figma](https://www.figma.com/design/xzH1WE1mDFlCSKaI8n8Vth/Grab_food?node-id=0-1&t=LGpY3XlHizBbzEeG-1)
+
+![Cat Image](images/cat.png)
