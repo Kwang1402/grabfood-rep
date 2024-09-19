@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Crowd's Pick For Dinner"
+        android:text="@string/crowd_s_pick_for_dinner"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:listitem="@layout/item_recycler_horizontal4" />
+        tools:listitem="@layout/cp_item_food" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_vertical4"
@@ -50,6 +50,6 @@
         app:layout_constraintEnd_toEndOf="@+id/recycler_horizontal4"
         app:layout_constraintStart_toStartOf="@+id/recycler_horizontal4"
         app:layout_constraintTop_toBottomOf="@+id/recycler_horizontal4"
-        tools:listitem="@layout/item_restaurant" />
+        tools:listitem="@layout/flashdeal_item_restaurant" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.adapter.FoodAdapter;
+import com.app.java.grabfoodappproject.adapter.intro.FoodAdapter;
 
 public class MainActivity extends AppCompatActivity {
     private FoodAdapter mFoodAdapter;

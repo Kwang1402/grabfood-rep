@@ -23,7 +23,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView3"
-                android:name="com.app.java.grabfoodappproject.fragment.IntroFragment"
+                android:name="com.app.java.grabfoodappproject.fragment.intro.IntroFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -37,13 +37,13 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView12"
-                android:name="com.app.java.grabfoodappproject.fragment.FlashDealFragment"
+                android:name="com.app.java.grabfoodappproject.fragment.flash_deals.FlashDealFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView5"
-                android:name="com.app.java.grabfoodappproject.fragment.AdsFragment"
+                android:name="com.app.java.grabfoodappproject.fragment.flash_deals.AdsFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -57,7 +57,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView2"
-                android:name="com.app.java.grabfoodappproject.fragment.RecommendedFoodFragment"
+                android:name="com.app.java.grabfoodappproject.fragment.recommended.RecommendedFoodFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -70,7 +70,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView11"
-                android:name="com.app.java.grabfoodappproject.fragment.CrowdPickFragment"
+                android:name="com.app.java.grabfoodappproject.fragment.crowd_pick.CrowdPickFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

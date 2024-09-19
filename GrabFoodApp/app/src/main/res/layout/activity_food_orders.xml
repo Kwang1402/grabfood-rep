@@ -46,7 +46,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/voucher_fragment"
-        android:name="com.app.java.grabfoodappproject.fragment.VoucherFragment"
+        android:name="com.app.java.grabfoodappproject.fragment.order.VoucherFragment"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="20dp"
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
-        tools:layout="@layout/fragment_voucher">
+        tools:layout="@layout/fragment_dov_voucher">
 
     </androidx.fragment.app.FragmentContainerView>
 

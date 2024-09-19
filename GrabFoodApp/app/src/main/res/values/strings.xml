@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">GrabFoodAppProject</string>
-    <string name="delivery">DELIVER TO</string>
+    <string name="delivery">Deliver</string>
     <string name="food_icon">Food Icon</string>
     <string name="item_title">Item Title</string>
     <string name="restaurant_name">Restaurant Name</string>
@@ -10,10 +10,10 @@
     <string name="default_price_discount">26.000đ off</string>
     <string name="back_button">back</string>
     <string-array name="spinner_location">
-        <item>Số 8,Hoàng Quốc Việt,Cầu Giấy,Hà Nội</item>
-        <item>Khu đô thị Xuân Phương, Nam Từ Liêm,Hà Nội</item>
+        <item>Số 8, Hoàng Quốc Việt, Cầu Giấy, Hà Nội</item>
+        <item>Khu đô thị Xuân Phương, Nam Từ Liêm, Hà Nội</item>
         <item>Số 16, Đường Bưởi, Tây Hồ, Hà Nội</item>
-        <item>Ngõ 15, Nghĩa Tân,Cầu Giấy,Hà Nội</item>
+        <item>Ngõ 15, Nghĩa Tân, Cầu Giấy, Hà Nội</item>
         <item>116 Hoàng Quốc Việt, Cầu Giấy, Hà Nội</item>
     </string-array>
     <string name="noodle">Noodles</string>
@@ -66,4 +66,21 @@
     <string name="left_arrow_ic">left_arrow_ic</string>
     <string name="favourite_image">favourite_image</string>
     <string name="Back">Back\n</string>
+    <string name="cafe">Cafe</string>
+    <string name="_20_off">20% off</string>
+    <string name="bun_dau">Bun dau</string>
+    <string name="_30_mins">30 mins ·</string>
+    <string name="_3_3km">3.3km</string>
+    <string name="_12_30">12:30</string>
+    <string name="dine_out_deals">Dine Out Deals</string>
+    <string name="get_it_quick">Get it quick</string>
+    <string name="qu_ngon_ngon">Quá ngon ngon</string>
+    <string name="crowd_s_pick_for_dinner">Crowd\'s Pick For Dinner</string>
+    <string name="b_a_ngon_0">Bữa ngon 0Đ</string>
+    <string name="ch_t_deal_ngay">Chốt deal ngay</string>
+    <string name="near_me">Near Me</string>
+    <string name="tri_u_m_n_bao_r">Triệu món bao rẻ</string>
+    <string name="grab_ngon_r">Grab ngon rẻ</string>
+    <string name="gi_m_l_n_n_50">Giảm lên đến 50%</string>
+    <string name="bao_ti_t_ki_m">Bao tiết kiệm</string>
 </resources>

@@ -40,7 +40,7 @@
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="@string/we_re_making_it_easier_to_order_food_from_places_you_swear_by_simply_tap_the_heart_icon_on_the_restaurant_page_to_fill_this_space"
-        android:textColor="#707070"
+        android:textColor="@color/grey"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

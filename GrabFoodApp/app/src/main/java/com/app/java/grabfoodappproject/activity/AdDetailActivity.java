@@ -13,9 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.adapter.RestaurantAdapter;
-import com.app.java.grabfoodappproject.adapter.RestaurantAdapterRecycler;
-import com.app.java.grabfoodappproject.domain.model.Restaurant;
+import com.app.java.grabfoodappproject.adapter.flash_deals.RestaurantAdapterRecycler;
+import com.app.java.grabfoodappproject.domain.model.flash_deals.Restaurant;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -71,7 +71,7 @@
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="@string/purchase_a_dine_out_voucher_and_find_it_here"
-        android:textColor="#707070"
+        android:textColor="@color/grey"
         android:textSize="@dimen/content_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
