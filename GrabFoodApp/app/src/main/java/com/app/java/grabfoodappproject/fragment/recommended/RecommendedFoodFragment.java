@@ -95,9 +95,11 @@ public class RecommendedFoodFragment extends Fragment {
 
         RecyclerView recyclerRestaurant = view.findViewById(R.id.rc_recycler_vertical);
         List<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("Bánh Mì Cô Chun", "4.7 (479) • $$$$ • Bread", "10.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "20% off", "10.000đ off", R.drawable.banh_mi_co_chun));
-        restaurants.add(new Restaurant("Cơm Niêu Hợp Tác Xã", "4.2 (415) • $$$$ • Rice", "Free 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "100% off", "15.000đ off", R.drawable.com_nieu_hop_tac_xa));
-        restaurants.add(new Restaurant("Cà Phê Muối Chú Long", "4.2 (94) • $$$$ • Coffee - Tea - Juice", "11.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 35 mins", "20% off", "10.000đ off", R.drawable.ca_phe_muoi_chu_long));
+
+        restaurants.add(new Restaurant("Bún Đậu Hà Thành", "4.1 (317) • $$$$ • Noodles", "10.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins","50% off","15.000đ", R.drawable.rec_bundau));
+        restaurants.add(new Restaurant("Bún Trộn Gánh Phố Cổ", "3.9 (200) • $$$$ • Noodles", "Free 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "5% off", "10.000đ", R.drawable.rec_buntron));
+        restaurants.add(new Restaurant("Pizza Hut", "4.8 (789) • $$$$ • Pizza", "100.000đ 1̶2̶0̶.̶0̶0̶0̶đ̶ • From 35 mins", "20% off", "12.000đ", R.drawable.rec_pizza));
+        restaurants.add(new Restaurant("Cháo Quẩy Trung Tự","5.0 (650) • $$$$ • Porrige","35.000đ • From 20 mins","10% off","Free Pepsi",R.drawable.rec_chao));
 
         // Set the custom adapter
         RestaurantAdapterRecycler adapter = new RestaurantAdapterRecycler(restaurants);

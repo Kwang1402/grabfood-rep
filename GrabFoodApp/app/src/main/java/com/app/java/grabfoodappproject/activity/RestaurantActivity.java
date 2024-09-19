@@ -24,7 +24,7 @@ public class RestaurantActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-            }
+            };
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
