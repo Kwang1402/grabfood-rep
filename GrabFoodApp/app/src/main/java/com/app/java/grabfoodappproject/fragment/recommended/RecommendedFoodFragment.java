@@ -2,6 +2,7 @@ package com.app.java.grabfoodappproject.fragment.recommended;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,12 +14,15 @@ import android.widget.ListView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.app.java.grabfoodappproject.R;
+import com.app.java.grabfoodappproject.adapter.flash_deals.RestaurantAdapterRecycler;
 import com.app.java.grabfoodappproject.adapter.recommended.DishAdapter;
 import com.app.java.grabfoodappproject.adapter.recommended.ShopAdapter;
+import com.app.java.grabfoodappproject.domain.model.flash_deals.Restaurant;
 import com.app.java.grabfoodappproject.domain.model.recommended.RecommendedShop;
 import com.app.java.grabfoodappproject.domain.mock_data.ShopData;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,7 +80,7 @@ public class RecommendedFoodFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_recommended_food, container, false);
     }
 
-    public void onViewCreated(View view, Bundle savedInstanceState)
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
 
@@ -88,6 +92,16 @@ public class RecommendedFoodFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         recyclerView.setAdapter(itemShopAdapter);
+
+        RecyclerView recyclerRestaurant = view.findViewById(R.id.rc_recycler_vertical);
+        List<Restaurant> restaurants = new ArrayList<>();
+        restaurants.add(new Restaurant("Bánh Mì Cô Chun", "4.7 (479) • $$$$ • Bread", "10.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "20% off", "10.000đ off", R.drawable.banh_mi_co_chun));
+        restaurants.add(new Restaurant("Cơm Niêu Hợp Tác Xã", "4.2 (415) • $$$$ • Rice", "Free 1̶5̶.̶0̶0̶0̶đ̶ • From 40 mins", "100% off", "15.000đ off", R.drawable.com_nieu_hop_tac_xa));
+        restaurants.add(new Restaurant("Cà Phê Muối Chú Long", "4.2 (94) • $$$$ • Coffee - Tea - Juice", "11.000đ 1̶5̶.̶0̶0̶0̶đ̶ • From 35 mins", "20% off", "10.000đ off", R.drawable.ca_phe_muoi_chu_long));
+
+        // Set the custom adapter
+        RestaurantAdapterRecycler adapter = new RestaurantAdapterRecycler(restaurants);
+        recyclerRestaurant.setAdapter(adapter);
 
         /*ListView listView = view.findViewById(R.id.list_view);
         DishAdapter adapter = new DishAdapter(getActivity());

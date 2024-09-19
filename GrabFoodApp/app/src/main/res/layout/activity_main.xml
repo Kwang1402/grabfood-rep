@@ -45,7 +45,8 @@
                 android:id="@+id/fragmentContainerView5"
                 android:name="com.app.java.grabfoodappproject.fragment.flash_deals.AdsFragment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp" />
 
         </LinearLayout>
 
@@ -53,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView2"

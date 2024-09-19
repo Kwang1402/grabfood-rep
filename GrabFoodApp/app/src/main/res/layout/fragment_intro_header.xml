@@ -7,16 +7,17 @@
     android:background="@drawable/header_background_color">
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="32dp"-->
-<!--        android:layout_height="32dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/guideline2"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/guideline2"-->
-<!--        app:srcCompat="@drawable/ic_back_24"-->
-<!--        app:tint="#EAE2E2"-->
-<!--        android:contentDescription="@string/back_to_school"/>-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:visibility="invisible"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/ic_back_24"
+        app:tint="#EAE2E2"
+        android:contentDescription="@string/back_to_school"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -33,7 +34,7 @@
         android:layout_marginBottom="16dp"
         android:text="@string/delivery"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="@dimen/heading_size"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
