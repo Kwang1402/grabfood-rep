@@ -83,4 +83,9 @@
     <string name="grab_ngon_r">Grab ngon rẻ</string>
     <string name="gi_m_l_n_n_50">Giảm lên đến 50%</string>
     <string name="bao_ti_t_ki_m">Bao tiết kiệm</string>
+    <string name="combo_sieu_hoi">Combo sieu hoi</string>
+    <string name="ad_t_ngay">Ad · Đặt ngay</string>
+    <string name="noodles">Noodles</string>
+    <string name="sale">sale</string>
+    <string name="ad">Ad</string>
 </resources>

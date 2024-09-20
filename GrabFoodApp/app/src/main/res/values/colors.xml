@@ -19,4 +19,6 @@
     <color name="dark_blue">#00268D</color>
     <color name="grey">#707070</color>
     <color name="low_white">#EAE2E2</color>
+    <color name="green">#00B14F</color>
+    <color name="orange">#E64A19</color>
 </resources>

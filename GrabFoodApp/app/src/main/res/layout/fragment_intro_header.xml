@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:srcCompat="@drawable/ic_back_24"
-        app:tint="#EAE2E2"
+        app:tint="@color/low_white"
         android:contentDescription="@string/back_to_school"/>
 
     <androidx.constraintlayout.widget.Guideline
