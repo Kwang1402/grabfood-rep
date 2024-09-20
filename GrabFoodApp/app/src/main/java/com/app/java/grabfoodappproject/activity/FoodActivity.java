@@ -35,7 +35,6 @@ public class FoodActivity extends AppCompatActivity {
         ImageView image = findViewById(R.id.imageView9);
         textFoodName.setText(intent.getStringExtra(FOOD_KEY));
         image.setImageResource(intent.getIntExtra(FOOD_KEY_IMAGE, 0));
-
         ImageButton backButton = findViewById(R.id.icon_back_button);
         backButton.setOnClickListener(v -> {
             finish();
