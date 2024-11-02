@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.FoodOrdersActivity">
+    tools:context=".ui.activity.FoodOrdersActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
@@ -46,7 +46,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/voucher_fragment"
-        android:name="com.app.java.grabfoodappproject.fragment.order.VoucherFragment"
+        android:name="com.app.java.grabfoodappproject.ui.fragment.order.VoucherFragment"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="20dp"

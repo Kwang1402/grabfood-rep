@@ -15,7 +15,7 @@
         app:layout_constraintGuide_percent="0.15" />
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.app.java.grabfoodappproject.fragment.intro.HeaderFragment"
+        android:name="com.app.java.grabfoodappproject.ui.fragment.intro.HeaderFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"

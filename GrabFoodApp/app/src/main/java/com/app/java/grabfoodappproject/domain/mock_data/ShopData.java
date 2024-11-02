@@ -2,7 +2,8 @@
 package com.app.java.grabfoodappproject.domain.mock_data;
 
 import com.app.java.grabfoodappproject.R;
-import com.app.java.grabfoodappproject.domain.model.recommended.RecommendedShop;
+import com.app.java.grabfoodappproject.data.model.recommended.RecommendedShop;
+
 
 import java.util.ArrayList;
 

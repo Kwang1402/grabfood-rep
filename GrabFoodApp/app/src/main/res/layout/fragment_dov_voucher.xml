@@ -7,7 +7,7 @@
     android:id="@+id/voucher_fragment"
     app:cardCornerRadius="15dp"
     app:cardElevation="0dp"
-    tools:context=".fragment.order.VoucherFragment">
+    tools:context=".ui.fragment.order.VoucherFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
