@@ -38,7 +38,7 @@
                     android:fontFamily="@font/helvetica_bold"
                     android:text="@string/meal_under_40k"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/heading_size"
                     android:textStyle="bold" />
 
                 <!-- Subtitle -->
@@ -89,7 +89,7 @@
                     android:fontFamily="@font/helvetica_bold"
                     android:text="@string/qu_n_ngon_b"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/heading_size"
                     android:textStyle="bold" />
 
                 <!-- Subtitle -->
@@ -140,7 +140,7 @@
                     android:fontFamily="@font/helvetica_bold"
                     android:text="@string/si_u_ti_c_99k"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/heading_size"
                     android:textStyle="bold" />
 
                 <!-- Subtitle -->
@@ -192,7 +192,7 @@
                     android:fontFamily="@font/helvetica_bold"
                     android:text="@string/khao_ti_c_t_u_tr"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/heading_size"
                     android:textStyle="bold" />
 
                 <TextView
