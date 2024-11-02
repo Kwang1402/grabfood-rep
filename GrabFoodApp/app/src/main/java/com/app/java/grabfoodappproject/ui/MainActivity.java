@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject.ui.activity;
+package com.app.java.grabfoodappproject.ui;
 
 import android.os.Bundle;
 
