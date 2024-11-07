@@ -46,9 +46,6 @@ public class IntroFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         initFoodRecyclerView(view);
         initAdRecyclerView(view);
-        TextView textApi = view.findViewById(R.id.tv_api);
-        String apiKey = BuildConfig.API_KEY;
-        textApi.setText(apiKey);
     }
 
     private void initAdRecyclerView(View view) {
@@ -106,22 +103,5 @@ public class IntroFragment extends Fragment {
 //        intent.putExtra(FoodActivity.FOOD_KEY,food.getFoodName());
 //        intent.putExtra(FoodActivity.FOOD_KEY_IMAGE,food.getImageId());
         startActivity(intent);
-    }
-
-    private List<FoodIntro> createFoodList() {
-        List<FoodIntro> foodList = new ArrayList<>();
-        FoodIntro noodles = new FoodIntro(getString(R.string.noodle), R.drawable.noodle);
-        FoodIntro rice = new FoodIntro(getString(R.string.rice), R.drawable.fa_com_gaolut);
-        FoodIntro hotpot = new FoodIntro(getString(R.string.hotpot), R.drawable.fa_lau_thai);
-        FoodIntro healthyFood = new FoodIntro(getString(R.string.healthy_food), R.drawable.fa_healthyfood);
-        FoodIntro fastFood = new FoodIntro(getString(R.string.fast_food), R.drawable.fa_lau_ech);
-        FoodIntro coffee = new FoodIntro(getString(R.string.coffee), R.drawable.ca_phe_muoi_chu_long);
-        foodList.add(noodles);
-        foodList.add(rice);
-        foodList.add(healthyFood);
-        foodList.add(hotpot);
-        foodList.add(coffee);
-        foodList.add(fastFood);
-        return foodList;
     }
 }
