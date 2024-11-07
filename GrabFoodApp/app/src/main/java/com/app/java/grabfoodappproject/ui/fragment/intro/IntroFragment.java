@@ -86,12 +86,8 @@ public class IntroFragment extends Fragment {
         mFoodListAdapter = new FoodAdapter(new ArrayList<>(), this::createDetailFood);
         Repository repository = new RemoteRepository();
         mViewModel = new FoodListViewModel(repository);
-        String apiKey = BuildConfig.API_KEY;
         recyclerView.setAdapter(mFoodListAdapter);
         registerObserver();
-//        List<Food> foodList = createFoodList();
-//        FoodAdapter adapter = new FoodAdapter(foodList, this::createDetailFood);
-//        recyclerView.setAdapter(adapter);
     }
 
     private void registerObserver() {

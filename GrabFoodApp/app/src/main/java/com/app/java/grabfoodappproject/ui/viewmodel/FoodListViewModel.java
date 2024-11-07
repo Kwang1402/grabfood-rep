@@ -31,6 +31,5 @@ public class FoodListViewModel extends ViewModel {
                 _foods.postValue(null);
             }
         });
-
     }
 }

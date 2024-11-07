@@ -9,8 +9,8 @@ public class FoodList {
     private List<Food> mFoods;
 
     public FoodList(){
-
     }
+
     public FoodList(List<Food> foods) {
         mFoods = foods;
     }

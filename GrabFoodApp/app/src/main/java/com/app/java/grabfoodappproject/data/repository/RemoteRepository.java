@@ -14,7 +14,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RemoteRepository implements Repository {
-// https://grabfood-api.vercel.app
     @Override
     public void makeGetFoodRequest(RepositoryCallBack<FoodList> callBack) {
         Retrofit retrofit = new Retrofit.Builder()
@@ -31,7 +30,6 @@ public class RemoteRepository implements Repository {
                                    @NonNull Response<FoodList> response) {
                 callBack.onCompleted(new Result.Success<>(response.body()));
             }
-
             @Override
             public void onFailure(@NonNull Call<FoodList> call,
                                   @NonNull Throwable throwable) {
