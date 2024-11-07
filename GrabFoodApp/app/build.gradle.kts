@@ -1,3 +1,6 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -6,6 +9,9 @@ android {
     namespace = "com.app.java.grabfoodappproject"
     compileSdk = 34
 
+    val file = rootProject.file("local.properties")
+    val properties = Properties()
+    properties.load(FileInputStream(file))
     defaultConfig {
         applicationId = "com.app.java.grabfoodappproject"
         minSdk = 30
@@ -15,9 +21,12 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-            buildConfigField("String",
-                "API_KEY",
-                "\"${project.findProperty("API_KEY")}\"")
+
+        buildConfigField(
+            "String",
+            "API_KEY",
+            properties.getProperty("API_KEY")
+        )
     }
 
     buildTypes {
