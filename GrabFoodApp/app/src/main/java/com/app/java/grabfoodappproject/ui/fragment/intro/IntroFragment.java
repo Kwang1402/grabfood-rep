@@ -2,11 +2,10 @@ package com.app.java.grabfoodappproject.ui.fragment.intro;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,9 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.app.java.grabfoodappproject.BuildConfig;
+import com.app.java.grabfoodappproject.data.model.Ad;
 import com.app.java.grabfoodappproject.data.model.Food;
-import com.app.java.grabfoodappproject.data.model.intro.FoodIntro;
 import com.app.java.grabfoodappproject.data.model.intro.IntroAds;
 import com.app.java.grabfoodappproject.data.repository.RemoteRepository;
 import com.app.java.grabfoodappproject.data.repository.Repository;
@@ -25,6 +23,7 @@ import com.app.java.grabfoodappproject.ui.activity.FoodActivity;
 import com.app.java.grabfoodappproject.R;
 import com.app.java.grabfoodappproject.ui.adapter.intro.FoodAdapter;
 import com.app.java.grabfoodappproject.ui.adapter.intro.AdIntroAdapter;
+import com.app.java.grabfoodappproject.ui.viewmodel.AdListViewModel;
 import com.app.java.grabfoodappproject.ui.viewmodel.FoodListViewModel;
 import com.app.java.grabfoodappproject.utils.Utils;
 
@@ -33,7 +32,10 @@ import java.util.List;
 
 public class IntroFragment extends Fragment {
     private FoodAdapter mFoodListAdapter;
-    private FoodListViewModel mViewModel;
+    private FoodListViewModel mFoodListViewModel;
+    private AdListViewModel mAdListViewModel;
+    private AdIntroAdapter adAdapter;
+    private ProgressBar mProgressBar;
 
     @Nullable
     @Override
@@ -44,20 +46,40 @@ public class IntroFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        mProgressBar = view.findViewById(R.id.progressBar);
         initFoodRecyclerView(view);
         initAdRecyclerView(view);
     }
 
+    /**
+     * Ad List
+     */
     private void initAdRecyclerView(View view) {
         RecyclerView adRecycler = view.findViewById(R.id.ads_recycler1);
-        List<IntroAds> introAdsList = createAd1List();
-        AdIntroAdapter adAdapter = new AdIntroAdapter(introAdsList, this::createDetailAd);
+//        List<IntroAds> introAdsList = createAd1List();
+        Repository repository = new RemoteRepository();
+        mAdListViewModel = new AdListViewModel(repository);
+        adAdapter = new AdIntroAdapter(new ArrayList<>(), this::createDetailAd);
         adRecycler.setAdapter(adAdapter);
+        registerAdListObserver();
     }
 
-    private void createDetailAd(IntroAds introAds) {
+    private void registerAdListObserver() {
+        mProgressBar.setVisibility(View.VISIBLE);
+        mAdListViewModel.ads.observe(getViewLifecycleOwner(), adList -> {
+            mProgressBar.setVisibility(View.GONE);
+            if (adList == null) {
+                Toast.makeText(requireContext(), "Call API fail", Toast.LENGTH_SHORT).show();
+            } else {
+                adAdapter.updateAdList(adList);
+                Toast.makeText(requireContext(), "Call API success", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void createDetailAd(Ad introAds) {
         Intent intent = new Intent(requireActivity(), AdDetailActivity.class);
-        intent.putExtra(AdDetailActivity.IMAGE_ID_KEY, Utils.getIntroAdImageId(introAds.getAdName()));
+        intent.putExtra(AdDetailActivity.IMAGE_ID_KEY, Utils.getIntroAdImageId(introAds.getDescription()));
         startActivity(intent);
     }
 
@@ -78,22 +100,25 @@ public class IntroFragment extends Fragment {
         return introAdsList;
     }
 
+    /**
+     * Food List
+     */
     private void initFoodRecyclerView(View view) {
         RecyclerView recyclerView = view.findViewById(R.id.food_recycler);
         mFoodListAdapter = new FoodAdapter(new ArrayList<>(), this::createDetailFood);
         Repository repository = new RemoteRepository();
-        mViewModel = new FoodListViewModel(repository);
+        mFoodListViewModel = new FoodListViewModel(repository);
         recyclerView.setAdapter(mFoodListAdapter);
         registerObserver();
     }
 
     private void registerObserver() {
-        mViewModel.foods.observe(getViewLifecycleOwner(), foods -> {
-            if(foods == null){
-                Toast.makeText(requireContext(),"Call API fail",Toast.LENGTH_SHORT).show();
-            }else{
+        mFoodListViewModel.foods.observe(getViewLifecycleOwner(), foods -> {
+            if (foods == null) {
+                Toast.makeText(requireContext(), "Call API fail", Toast.LENGTH_SHORT).show();
+            } else {
                 mFoodListAdapter.updateFoods(foods);
-                Toast.makeText(requireContext(),"Call API success",Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireContext(), "Call API success", Toast.LENGTH_SHORT).show();
             }
         });
     }

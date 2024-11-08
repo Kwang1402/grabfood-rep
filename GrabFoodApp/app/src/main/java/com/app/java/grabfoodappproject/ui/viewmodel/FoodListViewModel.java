@@ -23,7 +23,7 @@ public class FoodListViewModel extends ViewModel {
         loadFoods();
     }
 
-    public void loadFoods() {
+    private void loadFoods() {
         mRepository.makeGetFoodRequest(result -> {
             if (result instanceof Result.Success) {
                 _foods.postValue(((Result.Success<FoodList>) result).data.getFoods());
