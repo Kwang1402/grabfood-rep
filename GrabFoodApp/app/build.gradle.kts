@@ -48,15 +48,10 @@ android {
 }
 
 dependencies {
-    // thư viện Glide
     implementation(libs.glide)
-    // sử dụng phiên bản okhttp3 hoặc mới hơn
     implementation(libs.okhttp)
-    // bóc tách và chuyển đổi JSON với Gson
     implementation(libs.gson)
-    // thư viện Retrofit2
     implementation(libs.retrofit)
-    // thư viện converter của Retrofit cho Gson
     implementation(libs.converter)
     implementation(libs.appcompat)
     implementation(libs.material)

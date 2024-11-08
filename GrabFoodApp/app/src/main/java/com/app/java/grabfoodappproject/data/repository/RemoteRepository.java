@@ -5,8 +5,8 @@ import androidx.annotation.NonNull;
 import com.app.java.grabfoodappproject.BuildConfig;
 import com.app.java.grabfoodappproject.data.model.AdList;
 import com.app.java.grabfoodappproject.data.model.FoodList;
-import com.app.java.grabfoodappproject.data.remote.AppService;
-import com.app.java.grabfoodappproject.data.remote.Result;
+import com.app.java.grabfoodappproject.data.remote_datasource.AppService;
+import com.app.java.grabfoodappproject.data.remote_datasource.Result;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,13 +24,6 @@ public class RemoteRepository implements Repository {
 
     @Override
     public void makeGetFoodRequest(RepositoryCallBack<FoodList> callBack) {
-//        Retrofit retrofit = new Retrofit.Builder()
-//                .baseUrl("https://grabfood-api.vercel.app")
-//                .addConverterFactory(GsonConverterFactory.create())
-//                .build();
-//        AppService appService = retrofit.create(AppService.class);
-//        String apiKey = BuildConfig.API_KEY;
-
         Call<FoodList> foodListCall = appService.listFoods(apiKey); // call api
         foodListCall.enqueue(new Callback<FoodList>() {
             @Override

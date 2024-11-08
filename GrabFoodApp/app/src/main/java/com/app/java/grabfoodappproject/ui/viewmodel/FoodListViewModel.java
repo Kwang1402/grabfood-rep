@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.app.java.grabfoodappproject.data.model.Food;
 import com.app.java.grabfoodappproject.data.model.FoodList;
-import com.app.java.grabfoodappproject.data.remote.Result;
+import com.app.java.grabfoodappproject.data.remote_datasource.Result;
 import com.app.java.grabfoodappproject.data.repository.Repository;
 
 import java.util.List;

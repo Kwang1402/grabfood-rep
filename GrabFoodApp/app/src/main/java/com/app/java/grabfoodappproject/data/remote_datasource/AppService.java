@@ -1,4 +1,4 @@
-package com.app.java.grabfoodappproject.data.remote;
+package com.app.java.grabfoodappproject.data.remote_datasource;
 
 import com.app.java.grabfoodappproject.data.model.AdList;
 import com.app.java.grabfoodappproject.data.model.FoodList;
