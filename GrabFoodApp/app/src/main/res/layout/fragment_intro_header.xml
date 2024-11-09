@@ -64,8 +64,22 @@
         app:tint="@color/low_white"
         android:contentDescription="@string/food_icon"/>
 
-    <Spinner
-        android:id="@+id/spinner_location"
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_location"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:gravity="start"-->
+<!--        android:textAlignment="textStart"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/ic_favourite"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textView"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline2"-->
+<!--        tools:ignore="TouchTargetSizeCheck" />-->
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_location"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -76,6 +90,9 @@
         app:layout_constraintEnd_toStartOf="@+id/ic_favourite"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:hint="Choose a location"
+        android:inputType="textAutoComplete"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
