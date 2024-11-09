@@ -27,6 +27,12 @@ android {
             "API_KEY",
             properties.getProperty("API_KEY")
         )
+
+        buildConfigField(
+            "String",
+            "MAPTILER_API_KEY",
+            properties.getProperty("MAPTILER_API_KEY")
+        )
     }
 
     buildTypes {
